@@ -1,0 +1,7 @@
+{
+  "title": "Mastering Asynchronous JavaScript",
+  "date": "2025-06-10",
+  "category": "JavaScript",
+  "excerpt": "Deep dive into async/await, Promises, and other modern JavaScript asynchronous patterns.",
+  "coverImage": "cover.png"
+}

@@ -1,0 +1,7 @@
+{
+  "title": "How to Calculate the JWT Token Expiry Duration",
+  "date": "2025-07-01",
+  "category": "Security",
+  "excerpt": "Learn about JWT structure and how to calculate token expiration duration in seconds and minutes using the exp and iat claims.",
+  "coverImage": "cover.jpg"
+}

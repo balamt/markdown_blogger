@@ -1,0 +1,195 @@
+/* WeCanCode.Live Main Stylesheet */
+
+:root {
+    --primary-color: #dc3545;  /* Bootstrap danger red */
+    --secondary-color: #212529;  /* Bootstrap dark */
+    --text-color: #ffffff;
+    --accent-color: #f8f9fa;
+}
+
+body {
+    background-color: #322020;
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+.site-title {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.site-description {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.site-logo {
+    height: 2rem;
+}
+
+/* Card Styles */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(220, 53, 69, 0.2);
+}
+
+.blog-image {
+    height: 120px;
+    object-fit: cover;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    position: sticky;
+    top: 2rem;
+}
+
+/* Category Badge Styles */
+.category-badge {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.category-badge:hover {
+    transform: scale(1.05);
+}
+
+/* Blog Post Page Styles */
+.blog-header-image {
+    height: 350px;
+    object-fit: cover;
+}
+
+.blog-content {
+    line-height: 1.8;
+}
+
+/* Code block styling for markdown */
+pre {
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    padding: 1rem;
+    overflow-x: auto;
+    position: relative;
+    margin: 1.5em 0;
+    border-left: 3px solid var(--primary-color);
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--primary-color);
+}
+
+/* Enhanced code block styling with Prism.js integration */
+pre[class*="language-"] {
+    padding: 1.5rem 1rem 1rem 3.8rem;
+    margin: 2rem 0;
+    overflow: auto;
+    border-radius: 0.3rem;
+    border-left: 3px solid var(--primary-color);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+code[class*="language-"] {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-shadow: none;
+}
+
+/* Code copy button */
+.code-copy-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 10;
+    display: block;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+    color: #e2e2e2;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+pre:hover .code-copy-btn {
+    opacity: 1;
+}
+
+.code-copy-btn:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.code-copy-btn.success {
+    background-color: #198754;
+    color: white;
+}
+
+.code-copy-btn.error {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Line number styling override */
+.line-numbers .line-numbers-rows {
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Image styling in blog posts */
+.blog-content img {
+    max-width: 100%;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+/* Mobile Optimizations */
+@media (max-width: 767px) {
+    .blog-image {
+        height: 100px;
+    }
+    
+    .site-title {
+        font-size: 1.5rem;
+    }
+    
+    .blog-header-image {
+        height: 200px;
+    }
+}
+
+/* Animation for blog cards loading */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.blog-card {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+/* Dark scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b02a37;
+}
