@@ -1,8 +1,8 @@
-# WeCanCode.Live
+# Markdown Blogger
 
 ## Description
 
-WeCanCode.Live is a responsive web application built with HTML, Bootstrap, and JavaScript. The platform hosts microblogs organized in individual subfolders, each containing markdown files and related images. The application features a black and red theme and is designed with mobile-first principles.
+Markdown Blogger is a responsive web application built with HTML, Bootstrap, and JavaScript. The platform hosts microblogs organized in individual subfolders, each containing markdown files and related images. The application features a black and red theme and is designed with mobile-first principles.
 
 ## Features
 
@@ -64,7 +64,7 @@ Default credentials are:
 ## Project Structure
 
 ```text
-wecancode_live_blog/
+yoursite_blog/
 ├── assets/
 │   ├── css/
 │   │   └── style.css
